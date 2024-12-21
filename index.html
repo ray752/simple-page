@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        nav {
+            background-color: #333;
+            padding: 1em;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .contact {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Simple Page</h1>
-    <p>This is a basic HTML page that we'll be working with.</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="home">
+        <h1>Welcome to My Simple Page</h1>
+        <p>This is a basic HTML page that we've enhanced with more content.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We're a simple page demonstrating HTML and CSS capabilities. This section shows how we can organize content effectively.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: example@simple-page.com</p>
+        <p>Phone: (555) 123-4567</p>
+    </section>
 </body>
 </html>
